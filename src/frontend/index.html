@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#193e91" />
+    <meta name="description" content="DearPeter — a retro-inspired chat interface mockup." />
+    <title>DearPeter — Your friendly neighborhood chat</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conversation">Skip to conversation</a>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Chat history">
+        <a class="brand" href="index.html" aria-label="DearPeter home">
+          <span class="brand-mark" aria-hidden="true">dp.</span>
+          <span>dear<span class="brand-serif">peter</span><span class="brand-period">.</span></span>
+        </a>
+        <p class="sidebar-tagline">A little company.<br />A different perspective.</p>
+
+        <button class="new-chat" type="button" disabled title="New chats will be available when the app is connected.">
+          <span aria-hidden="true">＋</span> New conversation <span class="button-arrow" aria-hidden="true">↗</span>
+        </button>
+
+        <nav class="history" aria-label="Conversations">
+          <h2 class="eyebrow">Your conversations <span>03</span></h2>
+          <p class="history-date">TODAY</p>
+          <ul class="history-list">
+            <li class="history-item selected">
+              <a href="#conversation" aria-current="page">
+                <span class="history-title"><svg class="small-star" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 1v22M1 12h22M4 4l16 16M4 20 20 4" /><path d="m12 3 6 3 3 6-3 6-6 3-6-3-3-6 3-6Z" /><path d="m12 7 3 2 2 3-2 3-3 2-3-2-2-3 2-3Z" /></svg> A little overwhelmed</span>
+                <span class="history-preview">One small thing at a time.</span>
+              </a>
+            </li>
+            <li class="history-item">
+              <span class="history-title">Late-night thoughts</span>
+              <span class="history-preview">The city never really sleeps.</span>
+            </li>
+          </ul>
+          <p class="history-date">YESTERDAY</p>
+          <ul class="history-list">
+            <li class="history-item">
+              <span class="history-title">Finding my next chapter</span>
+              <span class="history-preview">It's okay to figure it out as you go.</span>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-note">
+          <svg class="note-star" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 1v22M1 12h22M4 4l16 16M4 20 20 4" /><path d="m12 3 6 3 3 6-3 6-6 3-6-3-3-6 3-6Z" /><path d="m12 7 3 2 2 3-2 3-3 2-3-2-2-3 2-3Z" /></svg>
+        </div>
+
+      </aside>
+
+      <main class="main-panel" id="conversation" tabindex="-1">
+        <header class="topbar">
+          <span class="eyebrow">Your friendly neighborhood chat</span>
+          <span class="demo-badge"><span aria-hidden="true"></span> FRONTEND DEMO</span>
+        </header>
+
+        <div class="chat-layout">
+          <section class="intro" aria-labelledby="page-title">
+            <div class="issue-line"><span>LETTERS FROM QUEENS, NY</span><span>VOL. 01 / NO. 003</span></div>
+            <div class="intro-heading">
+              <div><p class="intro-kicker">THE WORLD CAN WAIT A MINUTE.</p><h1 id="page-title">Hey, <em>neighbor.</em></h1></div>
+              <span class="hello-stamp" aria-hidden="true">GOOD TO<br /><strong>SEE YOU!</strong><span class="stamp-webs">
+                <svg class="stamp-web" viewBox="0 0 24 24" focusable="false"><path d="M12 1v22M1 12h22M4 4l16 16M4 20 20 4" /><path d="m12 3 6 3 3 6-3 6-6 3-6-3-3-6 3-6Z" /><path d="m12 7 3 2 2 3-2 3-3 2-3-2-2-3 2-3Z" /></svg>
+              </span></span>
+            </div>
+          </section>
+
+          <section class="conversation" aria-label="Sample conversation">
+            <div class="date-divider"><span>TODAY, 4:24 PM</span></div>
+            <article class="message message-user" aria-label="Your message">
+              <div class="message-meta"><span>YOU</span><time datetime="16:24">4:24 PM</time></div>
+              <div class="message-bubble"><p>Hey Peter. Ever feel like you’re trying to do a hundred things at once and somehow falling behind on all of them?</p></div>
+            </article>
+
+            <article class="message message-peter" aria-label="Peter's sample reply">
+              <div class="peter-avatar" aria-hidden="true">p.</div>
+              <div class="message-content">
+                <div class="message-meta"><span>PETER PARKER <span class="ai-label">AI</span></span><time datetime="16:24">4:24 PM</time></div>
+                <div class="message-bubble">
+                  <p>Oh, only every day ending in “y”.
+                  Between classes, work, and an almost impressive ability to miss the subway… yeah. I know that feeling.
+                  But hey, you don’t have to solve everything tonight. Maybe we start with <strong>one small thing.</strong>
+                  What’s taking up the most space in your head right now?</p>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <footer class="composer-section">
+            <div class="composer">
+              <textarea id="message" name="message" rows="1" placeholder="Dear Peter, …" aria-label="Message to Peter" aria-describedby="demo-note"></textarea>
+              <button class="send-button" type="button" disabled title="Sending is unavailable in this HTML/CSS mockup.">Send message <span aria-hidden="true">↗</span></button>
+            </div>
+            <p class="demo-note" id="demo-note">A fictional AI companion. <span>Static demo · messages aren’t sent or saved.</span></p>
+          </footer>
+        </div>
+        <div class="bottom-stripe" aria-hidden="true"></div>
+      </main>
+    </div>
+  </body>
+</html>
